@@ -1,0 +1,59 @@
+# Elemental Weapon System with Visual Effects
+
+## Overview
+This Unity project demonstrates a modular weapon system that allows players to switch between three elemental weapons: Fire, Ice, and Electricity. Each weapon has unique visual effects created using Unity’s Shader Graph and VFX Graph. The system is designed with Object-Oriented Programming (OOP) principles to ensure modularity and extensibility.
+
+## Features
+- **Modular Weapon System**: Switch between Fire, Ice, and Electricity weapons using a simple UI.
+- **Unique Visual Effects**:
+  - **Fire Weapon**: Fiery visual effect with a fireball projectile.
+  - **Ice Weapon**: Frosty effect with an ice projectile.
+  - **Electricity Weapon**: Electric field effect with a continuous lightning beam.
+- **Shader Graph**: Custom shaders for each weapon effect.
+- **VFX Graph**: Enhanced visual effects for each weapon.
+- **Mobile Optimization**: Ensured smooth performance on Android devices.
+
+## Design Approach
+
+### Object-Oriented Programming (OOP) Concepts
+The weapon system is designed using OOP principles to allow for easy extensibility and maintenance. Key concepts used include:
+- **Inheritance**: Base `Weapon` class with derived classes for each weapon type (`FireWeapon`, `IceWeapon`, `ElectricityWeapon`).
+- **Polymorphism**: Switching between different weapon types using a common interface.
+- **Encapsulation**: Weapon properties and behaviors are encapsulated within their respective classes.
+
+### Visual Effects
+Each weapon has been given a unique look and feel using Shader Graph and VFX Graph.
+- **Fire Weapon**: Uses a Shader Graph to create a fiery effect with animated flames. The fireball projectile has a trail of fire particles.
+- **Ice Weapon**: Implements a frosty effect using Shader Graph with snowflake patterns. The ice projectile leaves a trail of ice shards.
+- **Electricity Weapon**: Features an electric field effect with Shader Graph, with a continuous lightning beam created using VFX Graph.
+
+### Mobile Performance Optimization
+- **Shader Optimization**: Simplified shaders to reduce computational load.
+- **VFX Graph Optimization**: Limited the number of particles and used mobile-friendly settings to ensure smooth performance.
+- **Object Pooling**: Implemented for projectiles to minimize runtime instantiation overhead.
+
+## Installation and Usage
+
+### Prerequisites
+- Unity 2021.3 or higher
+- Android SDK setup in Unity
+
+### Building the APK
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/ElementalWeaponSystem.git
+   ```
+2. Open the project in Unity.
+3. Switch the build target to Android (File > Build Settings > Android > Switch Platform).
+4. Connect your Android device via USB and enable Developer Mode and USB Debugging.
+5. Build and Run the project (File > Build and Run).
+
+### Controls
+- Use the UI buttons to switch between Fire, Ice, and Electricity weapons.
+- Tap on the screen to fire the selected weapon.
+
+## Repository Structure
+- **Assets**: Contains all the project assets including scripts, shaders, VFX, and UI elements.
+- **Scripts**: Contains C# scripts implementing the weapon system.
+- **Shaders**: Contains Shader Graph assets for each weapon.
+- **VFX**: Contains VFX Graph assets for additional visual effects.
